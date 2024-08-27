@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=New+Amsterdam&display=swap');
+
+:root{
+  --color-primario:#F6EACB;
+  --color-secundario:#C9DABF;
+  --color-terciario:#C7B7A3;
+  --color-cuaternario:#1E201E;
+  --color-quinario:#FFEEA9;
+  --color-senario:#3C3D37;
+  --color-septenario:#C7B7A3;
+  --color-octavo:#FFBF78;
+
+
+  --fuente-newamsterdan:"New Amsterdam", sans-serif;
+  --fuente-jersey: "Jersey 10", sans-serif;
+ 
+  }
+
+* {
+  background: var(--color-primario);
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  padding: 0% 0% 0% 0%;
+  top: auto;
+  
+ }
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background:var(--color-primario);
+}
+
+.texto {
+  position: absolute;
+  width: 41%;
+  height: 60%;
+  left: 10%;
+  top: 15%;
+  border: none;
+  border: 5px double var(--color-cuaternario);
+  font-family: var(--fuente-jersey);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  background-color:var(--color-terciario);
+}
+
+.texto__placeholder {
+  color:var(--color-terciario);
+}
+
+.texto:focus,
+.texto:active {
+  border: none;
+  outline: none;
+}
+
+.terminos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 78%;
+}
+
+.terminos p {
+  font-family: "Inter";
+  font-style:var(--fuente-jersey);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color:var(--color-cuaternario);
+  opacity:15;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1% 0%;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 82%;
+  gap: 24px;
+}
+
+.btn-encriptar {
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background-color:var(--color-octavo);
+  border: 2px dotted var(--color-cuaternario);
+  border-radius: 24px;
+  font-family: var(--fuente-jersey);
+  font-size: 32px;
+  line-height: 19px;
+  text-align: center;
+  color:var(--color-senario);
+}
+
+.btn-desencriptar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background:var(--color-quinario);
+  border: 2px dotted var(--color-cuaternario);
+  border-radius: 24px;
+  font-family:var(--fuente-jersey);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 19px;
+  text-align: center;
+  color:var(--color-cuaternario);
+}
+
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
+  margin: 0.3%;
+  width: 23.5%;
+  padding: 1.8%;
+}
+.encriptado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuir el espacio entre los elementos */
+  align-items: center;
+  position: absolute;
+  width: 30%;
+  height: 90%;
+  left: 60%;
+  top: 5%;
+  background: var(--color-terciario);
+  border: 4px dotted var(--color-cuaternario);
+  border-radius: 32px;
+  overflow: hidden; /* Evita desbordamientos */
+}
+
+.mensaje-encriptado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16px;
+  position: absolute;
+  width: 80%;
+  top: 65%;
+  text-align: center;
+  background: var(--color-terciario);
+}
+
+.mensaje-encriptado h2 {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+  background: var(--color-terciario);
+}
+
+.mensaje-encriptado p {
+  width: 100%;
+  font-family:var(--fuente-jersey);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+  background: var(--color-terciario);
+}
+
+.btn-copiar {
+  margin: 10px 0; /* Espacio en la parte superior e inferior */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--color-octavo);
+  border: 2px solid var(--color-cuaternario);
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: center; /* Centrar el botón */
+}
+
+.btn-borrar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: center;
+  position: absolute;
+  width: 0%;
+  left: 54%;
+  top: 35%;
+  right: 20%;
+  box-sizing:center;
+  border: none;
+
+}
+
+.btn-img{
+  width: 50px; /* Ajustar el tamaño del icono */
+  height: 50px;
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
+  border: 2.5px solid var(--color-senario);
+  border-radius: 32px;
+
+}
+
+.encriptado img {
+  position: relative;
+  width: 50%; /* Ajustar tamaño del robot */
+  height: auto;
+  top: 20%;
+  margin-bottom: 10px;
+  background: var(--color-septenario);
+}
+
+.texto {
+  text-transform: lowercase; /* Convertir todo el texto a minúsculas */
+}
+
+.footer{
+  background-color: var(--color-terciario);
+  padding: 0.5rem;
+  color:var(--color-cuaternario);
+  text-align: center;
+  font-family:var(--fuente-newamsterdan);
+  font-size: 15px;
+  font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive design */
+@media (max-width:768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .encriptar {
+    width: 100%;
+  }
+  .texto {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+  }
+  .terminos {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+  .terminos p {
+    font-size: 16px;
+  }
+  .botones {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+  .btn-encriptar,
+  .btn-desencriptar {
+    width: 48%;
+    border-radius: 16px;
+  }
+  .btn-encriptar:hover,
+  .btn-desencriptar:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+  .encriptado {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+  .mensaje-encriptado {
+    width: 100%;
+    top: 5%;
+  }
+  .encriptado img {
+    top: 0;
+    display: none;
+    visibility: hidden;
+
+  }
+}
+.btn-copiar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--color-octavo);
+  border: 2px solid var(--color-cuaternario);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
