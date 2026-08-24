@@ -1,0 +1,405 @@
+<mxfile host="app.diagrams.net" modified="2026-08-24T19:10:00.000Z" agent="Cursor" version="22.1.0" type="device">
+  <diagram id="er-empresa" name="Modelo Entidad-Relación">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title-er" value="Ejercicio #2 — Modelo Entidad/Relación: Clientes, Artículos y Pedidos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a365d;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="1000" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ========== CLIENTE ========== -->
+        <mxCell id="cliente" value="CLIENTE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cli-id" value="nº_cliente" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="160" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cli-saldo" value="saldo" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="110" y="150" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cli-lim" value="límite_crédito&#xa;(≤ 3.000.000)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="180" y="170" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cli-desc" value="descuento" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="250" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cli-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cli-id" target="cliente"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-cli-saldo" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cli-saldo" target="cliente"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-cli-lim" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cli-lim" target="cliente"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-cli-desc" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cli-desc" target="cliente"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ========== DIRECCION_ENVIO ========== -->
+        <mxCell id="direccion" value="DIRECCIÓN&#xa;ENVÍO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="dir-id" value="id_dirección" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="20" y="620" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dir-num" value="nº" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="120" y="640" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dir-calle" value="calle" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="180" y="620" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dir-comuna" value="comuna" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dir-ciudad" value="ciudad" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="500" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-dir-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="dir-id" target="direccion"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-dir-num" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="dir-num" target="direccion"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-dir-calle" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="dir-calle" target="direccion"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-dir-comuna" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="dir-comuna" target="direccion"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-dir-ciudad" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="dir-ciudad" target="direccion"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Relación TIENE_DIR -->
+        <mxCell id="rel-tiene-dir" value="TIENE" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="400" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cli-tiene" value="1" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="cliente" target="rel-tiene-dir"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-tiene-dir" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-tiene-dir" target="direccion"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ========== PEDIDO ========== -->
+        <mxCell id="pedido" value="PEDIDO&#xa;(cabecera)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="280" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ped-id" value="nº_pedido" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="400" y="180" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ped-fecha" value="fecha&#xa;(incluye hora)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="170" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ped-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="ped-id" target="pedido"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-ped-fecha" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="ped-fecha" target="pedido"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- REALIZA (CLIENTE - PEDIDO) -->
+        <mxCell id="rel-realiza" value="REALIZA" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="260" y="285" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cli-realiza" value="1" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="cliente" target="rel-realiza"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-realiza-ped" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-realiza" target="pedido"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- SE_ENVIA_A (PEDIDO - DIRECCION) -->
+        <mxCell id="rel-envia" value="SE_ENVÍA_A" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="280" y="450" width="110" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ped-envia" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="pedido" target="rel-envia"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-envia-dir" value="1" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-envia" target="direccion"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ========== LINEA_PEDIDO ========== -->
+        <mxCell id="linea" value="LÍNEA&#xa;PEDIDO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="640" y="280" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="lin-num" value="nº_línea" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="640" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lin-cant" value="cantidad" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="190" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-lin-num" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="lin-num" target="linea"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-lin-cant" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="lin-cant" target="linea"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- CONTIENE (PEDIDO - LINEA) -->
+        <mxCell id="rel-contiene" value="CONTIENE" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="555" y="285" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ped-cont" value="1" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="pedido" target="rel-contiene"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-cont-lin" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-contiene" target="linea"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ========== ARTICULO ========== -->
+        <mxCell id="articulo" value="ARTÍCULO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="900" y="280" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="art-id" value="nº_artículo" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="880" y="170" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="art-desc" value="descripción" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="180" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-art-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="art-id" target="articulo"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-art-desc" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="art-desc" target="articulo"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- DETALLA (LINEA - ARTICULO) -->
+        <mxCell id="rel-detalla" value="DETALLA" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="780" y="285" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e-lin-det" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="linea" target="rel-detalla"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-det-art" value="1" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-detalla" target="articulo"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ========== FABRICA ========== -->
+        <mxCell id="fabrica" value="FÁBRICA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="900" y="560" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fab-id" value="nº_fábrica" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="820" y="640" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fab-tel" value="teléfono" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="940" y="660" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fab-total" value="total_artículos&#xa;(derivado)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="620" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="e-fab-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="fab-id" target="fabrica"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-fab-tel" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="fab-tel" target="fabrica"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-fab-total" style="endArrow=none;html=1;strokeColor=#b85450;dashed=1;" edge="1" parent="1" source="fab-total" target="fabrica"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- DISTRIBUYE (ARTICULO - FABRICA) N:M con existencias -->
+        <mxCell id="rel-dist" value="DISTRIBUYE" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="905" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-art-dist" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="articulo" target="rel-dist"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-dist-fab" value="M" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-dist" target="fabrica"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="dist-exist" value="existencias" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-dist-exist" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="dist-exist" target="rel-dist"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ALTERNATIVA (relación recursiva FABRICA - FABRICA) -->
+        <mxCell id="rel-alt" value="ES_ALTERNATIVA&#xa;DE" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="540" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e-fab-alt1" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;dashed=1;" edge="1" parent="1" source="fabrica" target="rel-alt"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-fab-alt2" value="M&#xa;(recursiva)" style="endArrow=none;html=1;strokeColor=#333333;fontSize=11;fontStyle=1;dashed=1;curved=1;" edge="1" parent="1" source="rel-alt" target="fabrica">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1185" y="700" />
+              <mxPoint x="965" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nota-alt" value="Relación recursiva: fábricas alternativas&#xa;respecto de las que ya proveen artículos" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#9673a6;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="720" width="280" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Leyenda -->
+        <mxCell id="leyenda" value="Leyenda (notación Chen)&#xa;&#xa;■ Rectángulo = Entidad&#xa;◆ Rombo = Relación&#xa;○ Atributo&#xa;○ subrayado = PK&#xa;○ rojo punteado = derivado&#xa;&#xa;Cardinalidades:&#xa;CLIENTE 1—N DIRECCIÓN&#xa;CLIENTE 1—N PEDIDO&#xa;PEDIDO N—1 DIRECCIÓN&#xa;PEDIDO 1—N LÍNEA&#xa;LÍNEA N—1 ARTÍCULO&#xa;ARTÍCULO N—M FÁBRICA (existencias)&#xa;FÁBRICA N—M FÁBRICA (alternativas)" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="750" width="320" height="280" as="geometry" />
+        </mxCell>
+
+        <mxCell id="notas" value="Notas de diseño&#xa;&#xa;• Varias direcciones de envío por cliente (entidad débil/hija).&#xa;• Pedido = cabecera + cuerpo (líneas).&#xa;• Fecha incluye hora → DATETIME.&#xa;• límite_crédito ≤ 3.000.000 (regla de negocio / CHECK).&#xa;• existencias es atributo de la relación DISTRIBUYE&#xa;  (stock del artículo en cada fábrica).&#xa;• total_artículos es derivado: COUNT de artículos&#xa;  que provee la fábrica vía DISTRIBUYE.&#xa;• ES_ALTERNATIVA_DE es recursiva N:M sobre FÁBRICA." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="420" y="750" width="420" height="260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="rel-empresa" name="Modelo Relacional">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title-rel" value="Ejercicio #2 — Modelo Relacional: Clientes, Artículos y Pedidos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a365d;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="1000" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- CLIENTE -->
+        <mxCell id="t-cli" value="CLIENTE" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cli-1" value="PK  num_cliente       INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-cli">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cli-2" value="     saldo             DECIMAL(12,2)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-cli">
+          <mxGeometry y="60" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cli-3" value="     limite_credito    DECIMAL(12,2)  ≤ 3000000" style="text;strokeColor=none;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-cli">
+          <mxGeometry y="90" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cli-4" value="     descuento         DECIMAL(5,2)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-cli">
+          <mxGeometry y="120" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cli-5" value="     CHECK (limite_credito ≤ 3000000)" style="text;strokeColor=none;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;" vertex="1" parent="t-cli">
+          <mxGeometry y="150" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- DIRECCION_ENVIO -->
+        <mxCell id="t-dir" value="DIRECCION_ENVIO" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="280" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dir-1" value="PK  id_direccion      INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-dir">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dir-2" value="FK  num_cliente       INTEGER → CLIENTE" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-dir">
+          <mxGeometry y="60" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dir-3" value="     numero            VARCHAR(20)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-dir">
+          <mxGeometry y="90" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dir-4" value="     calle             VARCHAR(150)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-dir">
+          <mxGeometry y="120" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dir-5" value="     comuna            VARCHAR(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-dir">
+          <mxGeometry y="150" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dir-6" value="     ciudad            VARCHAR(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-dir">
+          <mxGeometry y="180" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- PEDIDO -->
+        <mxCell id="t-ped" value="PEDIDO  (cabecera)" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="440" y="90" width="320" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="t-ped-1" value="PK  num_pedido        INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-ped">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-ped-2" value="FK  num_cliente       INTEGER → CLIENTE" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-ped">
+          <mxGeometry y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-ped-3" value="FK  id_direccion      INTEGER → DIRECCION_ENVIO" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-ped">
+          <mxGeometry y="90" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-ped-4" value="     fecha_pedido      DATETIME" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-ped">
+          <mxGeometry y="120" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- LINEA_PEDIDO -->
+        <mxCell id="t-lin" value="LINEA_PEDIDO  (cuerpo)" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="440" y="320" width="320" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="t-lin-1" value="PK,FK  num_pedido     INTEGER → PEDIDO" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-lin">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-lin-2" value="PK     num_linea      INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-lin">
+          <mxGeometry y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-lin-3" value="FK     num_articulo   INTEGER → ARTICULO" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-lin">
+          <mxGeometry y="90" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-lin-4" value="        cantidad       INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-lin">
+          <mxGeometry y="120" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ARTICULO -->
+        <mxCell id="t-art" value="ARTICULO" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="860" y="90" width="280" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="t-art-1" value="PK  num_articulo      INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-art">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-art-2" value="     descripcion       VARCHAR(255)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-art">
+          <mxGeometry y="60" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- FABRICA -->
+        <mxCell id="t-fab" value="FABRICA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="90" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t-fab-1" value="PK  num_fabrica       INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-fab">
+          <mxGeometry y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-fab-2" value="     telefono          VARCHAR(20)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-fab">
+          <mxGeometry y="60" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-fab-3" value="     total_articulos   (DERIVADO / vista)" style="text;strokeColor=none;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-fab">
+          <mxGeometry y="90" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- DISTRIBUYE -->
+        <mxCell id="t-dist" value="DISTRIBUYE" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="280" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dist-1" value="PK,FK  num_articulo   INTEGER → ARTICULO" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-dist">
+          <mxGeometry y="30" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dist-2" value="PK,FK  num_fabrica    INTEGER → FABRICA" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-dist">
+          <mxGeometry y="60" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dist-3" value="         existencias   INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-dist">
+          <mxGeometry y="90" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- FABRICA_ALTERNATIVA -->
+        <mxCell id="t-alt" value="FABRICA_ALTERNATIVA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="460" width="400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t-alt-1" value="PK,FK  num_fabrica              INTEGER → FABRICA" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-alt">
+          <mxGeometry y="30" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-alt-2" value="PK,FK  num_fabrica_alternativa  INTEGER → FABRICA" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-alt">
+          <mxGeometry y="60" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-alt-3" value="         CHECK (num_fabrica ≠ num_fabrica_alternativa)" style="text;strokeColor=none;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;" vertex="1" parent="t-alt">
+          <mxGeometry y="90" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- FK arrows -->
+        <mxCell id="fk1" style="endArrow=block;endFill=1;html=1;strokeColor=#d79b00;strokeWidth=2;" edge="1" parent="1" source="t-cli" target="t-dir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk1l" value="1:N" style="edgeLabel;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#d79b00;" vertex="1" connectable="0" parent="fk1">
+          <mxGeometry x="-0.2" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk2" style="endArrow=block;endFill=1;html=1;strokeColor=#d79b00;strokeWidth=2;" edge="1" parent="1" source="t-cli" target="t-ped">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk2l" value="1:N" style="edgeLabel;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#d79b00;" vertex="1" connectable="0" parent="fk2">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk3" style="endArrow=block;endFill=1;html=1;strokeColor=#d79b00;strokeWidth=2;exitX=1;exitY=0.25;entryX=0;entryY=0.7;" edge="1" parent="1" source="t-dir" target="t-ped">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="390" />
+              <mxPoint x="400" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk3l" value="1:N" style="edgeLabel;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#d79b00;" vertex="1" connectable="0" parent="fk3">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk4" style="endArrow=block;endFill=1;html=1;strokeColor=#d79b00;strokeWidth=2;" edge="1" parent="1" source="t-ped" target="t-lin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk4l" value="1:N" style="edgeLabel;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#d79b00;" vertex="1" connectable="0" parent="fk4">
+          <mxGeometry x="-0.2" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk5" style="endArrow=block;endFill=1;html=1;strokeColor=#d79b00;strokeWidth=2;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="t-art" target="t-lin">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="135" />
+              <mxPoint x="820" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk6" style="endArrow=block;endFill=1;html=1;strokeColor=#9673a6;strokeWidth=2;" edge="1" parent="1" source="t-art" target="t-dist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk6l" value="N:M" style="edgeLabel;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#9673a6;" vertex="1" connectable="0" parent="fk6">
+          <mxGeometry x="-0.2" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk7" style="endArrow=block;endFill=1;html=1;strokeColor=#9673a6;strokeWidth=2;" edge="1" parent="1" source="t-fab" target="t-dist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fk8" style="endArrow=block;endFill=1;html=1;strokeColor=#9673a6;strokeWidth=2;dashed=1;" edge="1" parent="1" source="t-fab" target="t-alt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk8l" value="recursiva N:M" style="edgeLabel;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#9673a6;" vertex="1" connectable="0" parent="fk8">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- Notación textual -->
+        <mxCell id="notacion" value="Notación del modelo relacional&#xa;&#xa;CLIENTE (num_cliente, saldo, limite_credito, descuento)&#xa;DIRECCION_ENVIO (id_direccion, num_cliente*, numero, calle, comuna, ciudad)&#xa;PEDIDO (num_pedido, num_cliente*, id_direccion*, fecha_pedido)&#xa;LINEA_PEDIDO (num_pedido*, num_linea, num_articulo*, cantidad)&#xa;ARTICULO (num_articulo, descripcion)&#xa;FABRICA (num_fabrica, telefono)&#xa;DISTRIBUYE (num_articulo*, num_fabrica*, existencias)&#xa;FABRICA_ALTERNATIVA (num_fabrica*, num_fabrica_alternativa*)&#xa;&#xa;* = FK&#xa;total_articulos = COUNT(*) FROM DISTRIBUYE WHERE num_fabrica = ?&#xa;CONSTRAINT: limite_credito ≤ 3.000.000&#xa;CONSTRAINT: id_direccion del pedido debe pertenecer al mismo num_cliente" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="60" y="620" width="720" height="320" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leyenda-rel" value="Leyenda&#xa;PK = Primary Key&#xa;FK = Foreign Key (naranja)&#xa;Azul = clientes / pedidos&#xa;Verde = artículos / fábricas&#xa;Violeta = tablas N:M o cuerpo&#xa;Rojo = restricción / derivado" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="820" y="620" width="240" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mapeo" value="Correspondencia pedido&#xa;&#xa;Cabecera → PEDIDO&#xa;  • num_cliente&#xa;  • id_direccion (de envío)&#xa;  • fecha_pedido (con hora)&#xa;&#xa;Cuerpo → LINEA_PEDIDO (N líneas)&#xa;  • num_articulo&#xa;  • cantidad" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="620" width="240" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
