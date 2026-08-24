@@ -122,15 +122,23 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- ========== ENTIDAD PROTAGONISTA ========== -->
+        <!-- Relación ACTÚA_EN (rombo = relación N:M, NO es la entidad) -->
+        <mxCell id="rel-actua" value="ACTÚA_EN&#xa;(máx. 3)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="930" y="480" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e-pel-actua" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="pelicula" target="rel-actua">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ========== ENTIDAD PROTAGONISTA (rectángulo = entidad) ========== -->
         <mxCell id="protagonista" value="PROTAGONISTA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="480" width="150" height="50" as="geometry" />
+          <mxGeometry x="1180" y="490" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="prot-id" value="id_protagonista" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="1330" y="460" width="120" height="40" as="geometry" />
+          <mxGeometry x="1360" y="450" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="prot-nom" value="nombre" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="520" width="80" height="40" as="geometry" />
+          <mxGeometry x="1370" y="520" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="e-prot-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="prot-id" target="protagonista">
           <mxGeometry relative="1" as="geometry" />
@@ -138,16 +146,11 @@
         <mxCell id="e-prot-nom" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="prot-nom" target="protagonista">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Relación ACTÚA_EN (PELÍCULA - PROTAGONISTA) N:M max 3 -->
-        <mxCell id="rel-actua" value="ACTÚA_EN&#xa;(máx. 3)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="470" width="110" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="e-pel-actua" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="pelicula" target="rel-actua">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="e-actua-prot" value="M" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-actua" target="protagonista">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nota-prot" value="Rectángulo = entidad PROTAGONISTA&#xa;Rombo = relación ACTÚA_EN (N:M)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#9673a6;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="550" width="260" height="40" as="geometry" />
         </mxCell>
 
         <!-- ========== RELACIÓN PROYECTA (SALA - PELÍCULA) con atributos ========== -->
@@ -222,8 +225,8 @@
         </mxCell>
 
         <!-- Leyenda -->
-        <mxCell id="leyenda" value="Leyenda&#xa;&#xa;■ Entidad&#xa;◆ Relación&#xa;○ Atributo&#xa;○ subrayado = Clave primaria&#xa;&#xa;Cardinalidades:&#xa;CINE 1 — N SALA&#xa;SALA N — M PELÍCULA (PROYECTA)&#xa;PELÍCULA N — M PROTAGONISTA (máx. 3)&#xa;CINE 1 — N PRECIO" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="420" y="620" width="320" height="220" as="geometry" />
+        <mxCell id="leyenda" value="Leyenda (notación Chen)&#xa;&#xa;■ Rectángulo = Entidad&#xa;   (CINE, SALA, PELÍCULA,&#xa;    PROTAGONISTA, PRECIO)&#xa;◆ Rombo = Relación&#xa;   (TIENE, PROYECTA,&#xa;    ACTÚA_EN, OFRECE PRECIO)&#xa;○ Atributo&#xa;○ subrayado = Clave primaria&#xa;&#xa;Cardinalidades:&#xa;CINE 1 — N SALA&#xa;SALA N — M PELÍCULA (PROYECTA)&#xa;PELÍCULA N — M PROTAGONISTA vía ACTÚA_EN&#xa;CINE 1 — N PRECIO" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="420" y="620" width="340" height="260" as="geometry" />
         </mxCell>
 
         <mxCell id="nota" value="Notas de diseño&#xa;• Un cine puede tener varias salas.&#xa;• En una misma sala se proyectan distintas películas en distintos horarios.&#xa;• Género permite consultas como «dibujos animados».&#xa;• Los precios dependen del cine y del tipo de día/tarifa.&#xa;• ACTÚA_EN limita a máximo 3 protagonistas por película (regla de negocio)." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
