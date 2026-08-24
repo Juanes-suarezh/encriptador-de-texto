@@ -1,0 +1,441 @@
+<mxfile host="app.diagrams.net" modified="2026-08-24T14:45:00.000Z" agent="Cursor" version="22.1.0" type="device">
+  <diagram id="er-cines" name="Modelo Entidad-Relación">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Título -->
+        <mxCell id="title-er" value="Ejercicio #1 — Modelo Entidad/Relación: Asociación de Cines" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a365d;" vertex="1" parent="1">
+          <mxGeometry x="280" y="20" width="900" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ========== ENTIDAD CINE ========== -->
+        <mxCell id="cine" value="CINE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Atributos CINE -->
+        <mxCell id="cine-id" value="id_cine" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="200" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cine-nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="110" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cine-calle" value="calle" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="190" y="200" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cine-numero" value="número" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="250" y="250" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cine-tel" value="teléfono" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="250" y="310" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cine-ubic" value="ubicación&#xa;(opcional)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="370" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cine-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cine-id" target="cine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cine-nombre" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cine-nombre" target="cine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cine-calle" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cine-calle" target="cine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cine-numero" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cine-numero" target="cine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cine-tel" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cine-tel" target="cine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cine-ubic" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="cine-ubic" target="cine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ========== ENTIDAD SALA ========== -->
+        <mxCell id="sala" value="SALA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="320" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sala-id" value="id_sala" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="400" y="220" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sala-num" value="número_sala" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="230" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sala-cap" value="capacidad&#xa;(opcional)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="290" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-sala-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="sala-id" target="sala">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-sala-num" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="sala-num" target="sala">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-sala-cap" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="sala-cap" target="sala">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Relación TIENE (CINE - SALA) -->
+        <mxCell id="rel-tiene" value="TIENE" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="325" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cine-tiene" value="1" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="cine" target="rel-tiene">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-tiene-sala" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-tiene" target="sala">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ========== ENTIDAD PELÍCULA ========== -->
+        <mxCell id="pelicula" value="PELÍCULA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="900" y="320" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pel-id" value="id_película" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="860" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pel-titulo" value="título" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="970" y="190" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pel-dir" value="director" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="220" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pel-gen" value="género" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="290" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pel-clas" value="clasificación" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="360" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-pel-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="pel-id" target="pelicula">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-pel-titulo" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="pel-titulo" target="pelicula">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-pel-dir" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="pel-dir" target="pelicula">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-pel-gen" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="pel-gen" target="pelicula">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-pel-clas" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="pel-clas" target="pelicula">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ========== ENTIDAD PROTAGONISTA ========== -->
+        <mxCell id="protagonista" value="PROTAGONISTA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="480" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="prot-id" value="id_protagonista" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="460" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="prot-nom" value="nombre" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="520" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-prot-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="prot-id" target="protagonista">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-prot-nom" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="prot-nom" target="protagonista">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Relación ACTÚA_EN (PELÍCULA - PROTAGONISTA) N:M max 3 -->
+        <mxCell id="rel-actua" value="ACTÚA_EN&#xa;(máx. 3)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="470" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e-pel-actua" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="pelicula" target="rel-actua">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-actua-prot" value="M" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-actua" target="protagonista">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ========== RELACIÓN PROYECTA (SALA - PELÍCULA) con atributos ========== -->
+        <mxCell id="rel-proy" value="PROYECTA" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="310" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-sala-proy" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="sala" target="rel-proy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-proy-pel" value="M" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-proy" target="pelicula">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Atributos de PROYECTA -->
+        <mxCell id="proy-id" value="id_proyección" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="proy-hora" value="hora" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="720" y="210" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="proy-dias" value="días /&#xa;patrón horario" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="740" y="270" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="proy-hv" value="horario_venta&#xa;boletas" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="400" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="e-proy-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="proy-id" target="rel-proy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-proy-hora" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="proy-hora" target="rel-proy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-proy-dias" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="proy-dias" target="rel-proy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-proy-hv" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="proy-hv" target="rel-proy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ========== ENTIDAD / RELACIÓN PRECIO ========== -->
+        <mxCell id="rel-precio" value="OFRECE&#xa;PRECIO" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="540" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cine-precio" value="1" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="cine" target="rel-precio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="precio" value="PRECIO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="700" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e-precio-rel" value="N" style="endArrow=none;html=1;strokeColor=#333333;fontSize=12;fontStyle=1;" edge="1" parent="1" source="rel-precio" target="precio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="prec-id" value="id_precio" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="780" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="prec-tipo" value="tipo_día&#xa;(espectador, jubilado,&#xa;festivo, estudiante…)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="790" width="140" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="prec-valor" value="valor" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="270" y="760" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-prec-id" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="prec-id" target="precio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-prec-tipo" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="prec-tipo" target="precio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-prec-valor" style="endArrow=none;html=1;strokeColor=#666666;" edge="1" parent="1" source="prec-valor" target="precio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Leyenda -->
+        <mxCell id="leyenda" value="Leyenda&#xa;&#xa;■ Entidad&#xa;◆ Relación&#xa;○ Atributo&#xa;○ subrayado = Clave primaria&#xa;&#xa;Cardinalidades:&#xa;CINE 1 — N SALA&#xa;SALA N — M PELÍCULA (PROYECTA)&#xa;PELÍCULA N — M PROTAGONISTA (máx. 3)&#xa;CINE 1 — N PRECIO" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="420" y="620" width="320" height="220" as="geometry" />
+        </mxCell>
+
+        <mxCell id="nota" value="Notas de diseño&#xa;• Un cine puede tener varias salas.&#xa;• En una misma sala se proyectan distintas películas en distintos horarios.&#xa;• Género permite consultas como «dibujos animados».&#xa;• Los precios dependen del cine y del tipo de día/tarifa.&#xa;• ACTÚA_EN limita a máximo 3 protagonistas por película (regla de negocio)." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="780" y="620" width="420" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="rel-cines" name="Modelo Relacional">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title-rel" value="Ejercicio #1 — Modelo Relacional: Asociación de Cines" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a365d;" vertex="1" parent="1">
+          <mxGeometry x="280" y="20" width="900" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Tabla CINE -->
+        <mxCell id="t-cine" value="CINE" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="260" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cine-1" value="PK  id_cine          INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-cine">
+          <mxGeometry y="30" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cine-2" value="     nombre           VARCHAR(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-cine">
+          <mxGeometry y="60" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cine-3" value="     calle             VARCHAR(150)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-cine">
+          <mxGeometry y="90" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cine-4" value="     numero            VARCHAR(20)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-cine">
+          <mxGeometry y="120" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cine-5" value="     telefono          VARCHAR(20)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-cine">
+          <mxGeometry y="150" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cine-6" value="     ubicacion         VARCHAR(150)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-cine">
+          <mxGeometry y="180" width="260" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Tabla SALA -->
+        <mxCell id="t-sala" value="SALA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="t-sala-1" value="PK  id_sala           INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-sala">
+          <mxGeometry y="30" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-sala-2" value="FK  id_cine           INTEGER  → CINE" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-sala">
+          <mxGeometry y="60" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-sala-3" value="     numero_sala       INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-sala">
+          <mxGeometry y="90" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-sala-4" value="     capacidad         INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-sala">
+          <mxGeometry y="120" width="260" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Tabla PRECIO -->
+        <mxCell id="t-precio" value="PRECIO" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="60" y="380" width="280" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="t-precio-1" value="PK  id_precio         INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-precio">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-precio-2" value="FK  id_cine           INTEGER  → CINE" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-precio">
+          <mxGeometry y="60" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-precio-3" value="     tipo_dia          VARCHAR(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-precio">
+          <mxGeometry y="90" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-precio-4" value="     valor             DECIMAL(10,2)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-precio">
+          <mxGeometry y="120" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Tabla PELICULA -->
+        <mxCell id="t-pel" value="PELICULA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="800" y="100" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="t-pel-1" value="PK  id_pelicula       INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-pel">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-pel-2" value="     titulo            VARCHAR(150)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-pel">
+          <mxGeometry y="60" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-pel-3" value="     director          VARCHAR(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-pel">
+          <mxGeometry y="90" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-pel-4" value="     genero            VARCHAR(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-pel">
+          <mxGeometry y="120" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-pel-5" value="     clasificacion     VARCHAR(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-pel">
+          <mxGeometry y="150" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Tabla PROTAGONISTA -->
+        <mxCell id="t-prot" value="PROTAGONISTA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="100" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="t-prot-1" value="PK  id_protagonista   INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-prot">
+          <mxGeometry y="30" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-prot-2" value="     nombre            VARCHAR(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-prot">
+          <mxGeometry y="60" width="260" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Tabla ACTUA_EN -->
+        <mxCell id="t-actua" value="ACTUA_EN" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="340" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t-actua-1" value="PK,FK  id_pelicula      INTEGER  → PELICULA" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-actua">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-actua-2" value="PK,FK  id_protagonista  INTEGER  → PROTAGONISTA" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-actua">
+          <mxGeometry y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-actua-3" value="        CHECK: máx. 3 por película" style="text;strokeColor=none;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-actua">
+          <mxGeometry y="90" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Tabla PROYECCION -->
+        <mxCell id="t-proy" value="PROYECCION" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="420" y="360" width="320" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="t-proy-1" value="PK  id_proyeccion     INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=4;" vertex="1" parent="t-proy">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-proy-2" value="FK  id_sala           INTEGER  → SALA" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-proy">
+          <mxGeometry y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-proy-3" value="FK  id_pelicula       INTEGER  → PELICULA" style="text;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-proy">
+          <mxGeometry y="90" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-proy-4" value="     hora              TIME" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-proy">
+          <mxGeometry y="120" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-proy-5" value="     dias_horario      VARCHAR(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-proy">
+          <mxGeometry y="150" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-proy-6" value="     horario_venta     VARCHAR(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="t-proy">
+          <mxGeometry y="180" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Flechas FK -->
+        <mxCell id="fk1" style="endArrow=block;endFill=1;html=1;strokeColor=#d79b00;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.35;" edge="1" parent="1" source="t-cine" target="t-sala">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk1l" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;fontColor=#d79b00;" vertex="1" connectable="0" parent="fk1">
+          <mxGeometry x="-0.1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk2" style="endArrow=block;endFill=1;html=1;strokeColor=#d79b00;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="t-cine" target="t-precio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk2l" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;fontColor=#d79b00;" vertex="1" connectable="0" parent="fk2">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk3" style="endArrow=block;endFill=1;html=1;strokeColor=#d79b00;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.25;entryY=0;" edge="1" parent="1" source="t-sala" target="t-proy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk3l" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;fontColor=#d79b00;" vertex="1" connectable="0" parent="fk3">
+          <mxGeometry x="-0.1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk4" style="endArrow=block;endFill=1;html=1;strokeColor=#d79b00;strokeWidth=2;exitX=0;exitY=0.5;entryX=1;entryY=0.25;" edge="1" parent="1" source="t-pel" target="t-proy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk4l" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;fontColor=#d79b00;" vertex="1" connectable="0" parent="fk4">
+          <mxGeometry x="-0.1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk5" style="endArrow=block;endFill=1;html=1;strokeColor=#9673a6;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.3;entryY=0;" edge="1" parent="1" source="t-pel" target="t-actua">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk5l" value="N:M" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;fontColor=#9673a6;" vertex="1" connectable="0" parent="fk5">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="fk6" style="endArrow=block;endFill=1;html=1;strokeColor=#9673a6;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.85;entryY=0;" edge="1" parent="1" source="t-prot" target="t-actua">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310" y="280" />
+              <mxPoint x="1272" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Notación relacional -->
+        <mxCell id="notacion" value="Notación del modelo relacional&#xa;&#xa;CINE (id_cine, nombre, calle, numero, telefono, ubicacion)&#xa;SALA (id_sala, id_cine*, numero_sala, capacidad)&#xa;PRECIO (id_precio, id_cine*, tipo_dia, valor)&#xa;PELICULA (id_pelicula, titulo, director, genero, clasificacion)&#xa;PROTAGONISTA (id_protagonista, nombre)&#xa;ACTUA_EN (id_pelicula*, id_protagonista*)   ← PK compuesta&#xa;PROYECCION (id_proyeccion, id_sala*, id_pelicula*, hora, dias_horario, horario_venta)&#xa;&#xa;* = clave foránea   |   subrayado implícito en PK&#xa;UNIQUE (id_cine, tipo_dia) en PRECIO&#xa;UNIQUE (id_sala, id_pelicula, hora, dias_horario) en PROYECCION" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="60" y="620" width="740" height="280" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ejemplo" value="Ejemplo del enunciado (mapeo)&#xa;&#xa;CINE: SUBA | Av Cali con Av Suba | Tel 3950592&#xa;      ubicacion = Centro Comercial Plaza Imperial&#xa;&#xa;PROYECCION:&#xa;• Rápidos y furiosos — 15:50 — todos los días&#xa;• Gatotopia — 15:50 — Lu a Vi&#xa;• Space Jam — 18:50 — Domingos y festivos&#xa;• Space Jam — 17:50 — demás días&#xa;&#xa;genero = 'dibujos animados' permite&#xa;consultar películas de animación y dónde se proyectan." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="840" y="520" width="400" height="280" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leyenda-rel" value="Leyenda&#xa;PK = Primary Key (subrayado)&#xa;FK = Foreign Key (naranja)&#xa;Azul = entidades base&#xa;Verde = película / actores&#xa;Violeta = tablas de relación / N:M" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="520" width="220" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
